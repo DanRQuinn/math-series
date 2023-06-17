@@ -32,12 +32,22 @@ def test_lucas_11():
     expected = 199
     assert actual == expected
 
-def test_sum_fib():
-    actual = sum_series(7,0,1)
-    expected = 13
+def test_sum_rdm():
+    actual = sum_series(4,6,9)
+    expected = 39
     assert actual == expected
   
+def test_sum_rdm2():
+    actual = sum_series(100, 0, 0)
+    expected = 0
+    assert actual == expected
+
+def test_sum_fib():
+    actual = sum_series(5, 0, 1)
+    expected = 3
+    assert actual == expected
+
 def test_sum_lucas():
-    actual = sum_series(11,2,1)
-    expected = 199
+    actual = sum_series(5, 2, 1)
+    expected = 7
     assert actual == expected
